@@ -1,0 +1,395 @@
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ COURSE_ID                                 NOT NULL VARCHAR2(8)
+ SEC_ID                                    NOT NULL VARCHAR2(8)
+ SEMESTER                                  NOT NULL VARCHAR2(6)
+ YEAR                                      NOT NULL NUMBER(4)
+ BUILDING                                           VARCHAR2(15)
+ ROOM_NUMBER                                        VARCHAR2(7)
+ TIME_SLOT_ID                                       VARCHAR2(4)
+
+
+COURSE_I SEC_ID   SEMEST       YEAR BUILDING        ROOM_NU TIME                
+-------- -------- ------ ---------- --------------- ------- ----                
+BIO-101  1        Summer       2009 Painter         514     B                   
+BIO-301  1        Summer       2010 Painter         514     A                   
+CS-101   1        Fall         2009 Packard         101     H                   
+CS-101   1        Spring       2010 Packard         101     F                   
+CS-190   1        Spring       2009 Taylor          3128    E                   
+CS-190   2        Spring       2009 Taylor          3128    A                   
+CS-315   1        Spring       2010 Watson          120     D                   
+CS-319   1        Spring       2010 Watson          100     B                   
+CS-319   2        Spring       2010 Taylor          3128    C                   
+CS-347   1        Fall         2009 Taylor          3128    A                   
+EE-181   1        Spring       2009 Taylor          3128    C                   
+
+COURSE_I SEC_ID   SEMEST       YEAR BUILDING        ROOM_NU TIME                
+-------- -------- ------ ---------- --------------- ------- ----                
+FIN-201  1        Spring       2010 Packard         101     B                   
+HIS-351  1        Spring       2010 Painter         514     C                   
+MU-199   1        Spring       2010 Packard         101     D                   
+PHY-101  1        Fall         2009 Watson          100     A                   
+
+15 rows selected.
+
+
+COURSE_I TITLE                                              DEPT_NAME           
+-------- -------------------------------------------------- --------------------
+   CREDITS                                                                      
+----------                                                                      
+BIO-101  Intro. to Biology                                  Biology             
+         4                                                                      
+                                                                                
+BIO-301  Genetics                                           Biology             
+         4                                                                      
+                                                                                
+BIO-399  Computational Biology                              Biology             
+         3                                                                      
+                                                                                
+
+COURSE_I TITLE                                              DEPT_NAME           
+-------- -------------------------------------------------- --------------------
+   CREDITS                                                                      
+----------                                                                      
+CS-101   Intro. to Computer Science                         Comp. Sci.          
+         4                                                                      
+                                                                                
+CS-190   Game Design                                        Comp. Sci.          
+         4                                                                      
+                                                                                
+CS-315   Robotics                                           Comp. Sci.          
+         3                                                                      
+                                                                                
+
+COURSE_I TITLE                                              DEPT_NAME           
+-------- -------------------------------------------------- --------------------
+   CREDITS                                                                      
+----------                                                                      
+CS-319   Image Processing                                   Comp. Sci.          
+         3                                                                      
+                                                                                
+CS-347   Database System Concepts                           Comp. Sci.          
+         3                                                                      
+                                                                                
+EE-181   Intro. to Digital Systems                          Elec. Eng.          
+         3                                                                      
+                                                                                
+
+COURSE_I TITLE                                              DEPT_NAME           
+-------- -------------------------------------------------- --------------------
+   CREDITS                                                                      
+----------                                                                      
+FIN-201  Investment Banking                                 Finance             
+         3                                                                      
+                                                                                
+HIS-351  World History                                      History             
+         3                                                                      
+                                                                                
+MU-199   Music Video Production                             Music               
+         3                                                                      
+                                                                                
+
+COURSE_I TITLE                                              DEPT_NAME           
+-------- -------------------------------------------------- --------------------
+   CREDITS                                                                      
+----------                                                                      
+PHY-101  Physical Principles                                Physics             
+         4                                                                      
+                                                                                
+
+13 rows selected.
+
+
+TITLE                                              DEPT_NAME                    
+-------------------------------------------------- --------------------         
+Intro. to Biology                                  Biology                      
+Genetics                                           Biology                      
+Computational Biology                              Biology                      
+Intro. to Computer Science                         Comp. Sci.                   
+Game Design                                        Comp. Sci.                   
+Robotics                                           Comp. Sci.                   
+Image Processing                                   Comp. Sci.                   
+Database System Concepts                           Comp. Sci.                   
+Intro. to Digital Systems                          Elec. Eng.                   
+Investment Banking                                 Finance                      
+World History                                      History                      
+
+TITLE                                              DEPT_NAME                    
+-------------------------------------------------- --------------------         
+Music Video Production                             Music                        
+Physical Principles                                Physics                      
+
+13 rows selected.
+
+
+DEPT_NAME                BUDGET                                                 
+-------------------- ----------                                                 
+Biology                   90000                                                 
+Comp. Sci.               100000                                                 
+Elec. Eng.                85000                                                 
+Finance                  120000                                                 
+History                   50000                                                 
+Music                     80000                                                 
+Physics                   70000                                                 
+
+7 rows selected.
+
+
+NAME                 DEPT_NAME                                                  
+-------------------- --------------------                                       
+Srinivasan           Comp. Sci.                                                 
+Wu                   Finance                                                    
+Mozart               Music                                                      
+Einstein             Physics                                                    
+El Said              History                                                    
+Gold                 Physics                                                    
+Katz                 Comp. Sci.                                                 
+Califieri            History                                                    
+Singh                Finance                                                    
+Crick                Biology                                                    
+Brandt               Comp. Sci.                                                 
+
+NAME                 DEPT_NAME                                                  
+-------------------- --------------------                                       
+Kim                  Elec. Eng.                                                 
+
+12 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Wu                                                                              
+Einstein                                                                        
+Gold                                                                            
+Katz                                                                            
+Singh                                                                           
+Crick                                                                           
+Brandt                                                                          
+Kim                                                                             
+
+8 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Srinivasan                                                                      
+El Said                                                                         
+Katz                                                                            
+Califieri                                                                       
+Singh                                                                           
+Crick                                                                           
+Kim                                                                             
+
+7 rows selected.
+
+
+DEPT_NAME                                                                       
+--------------------                                                            
+Elec. Eng.                                                                      
+Physics                                                                         
+Comp. Sci.                                                                      
+Finance                                                                         
+Biology                                                                         
+Music                                                                           
+History                                                                         
+
+7 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Katz                                                                            
+Brandt                                                                          
+
+
+COURSE_I SEC_ID   SEMEST       YEAR BUILDING        ROOM_NU TIME                
+-------- -------- ------ ---------- --------------- ------- ----                
+CS-101   1        Spring       2010 Packard         101     F                   
+CS-315   1        Spring       2010 Watson          120     D                   
+CS-319   1        Spring       2010 Watson          100     B                   
+CS-319   2        Spring       2010 Taylor          3128    C                   
+FIN-201  1        Spring       2010 Packard         101     B                   
+HIS-351  1        Spring       2010 Painter         514     C                   
+MU-199   1        Spring       2010 Packard         101     D                   
+
+7 rows selected.
+
+
+TITLE                                                                           
+--------------------------------------------------                              
+Intro. to Computer Science                                                      
+Game Design                                                                     
+
+
+NAME                 DEPT_NAME            BUILDING                              
+-------------------- -------------------- ---------------                       
+Srinivasan           Comp. Sci.           Taylor                                
+Wu                   Finance              Painter                               
+Mozart               Music                Packard                               
+Einstein             Physics              Watson                                
+El Said              History              Painter                               
+Gold                 Physics              Watson                                
+Katz                 Comp. Sci.           Taylor                                
+Califieri            History              Painter                               
+Singh                Finance              Painter                               
+Crick                Biology              Watson                                
+Brandt               Comp. Sci.           Taylor                                
+
+NAME                 DEPT_NAME            BUILDING                              
+-------------------- -------------------- ---------------                       
+Kim                  Elec. Eng.           Taylor                                
+
+12 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Zhang                                                                           
+Brown                                                                           
+Bourikas                                                                        
+Shankar                                                                         
+Levy                                                                            
+Williams                                                                        
+
+6 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Peltier                                                                         
+
+
+NAME                 COURSE_I                                                   
+-------------------- --------                                                   
+Srinivasan           CS-101                                                     
+Srinivasan           CS-315                                                     
+Srinivasan           CS-347                                                     
+Wu                   FIN-201                                                    
+Mozart               MU-199                                                     
+Einstein             PHY-101                                                    
+El Said              HIS-351                                                    
+Katz                 CS-101                                                     
+Katz                 CS-319                                                     
+Crick                BIO-101                                                    
+Crick                BIO-301                                                    
+
+NAME                 COURSE_I                                                   
+-------------------- --------                                                   
+Brandt               CS-190                                                     
+Brandt               CS-190                                                     
+Brandt               CS-319                                                     
+Kim                  EE-181                                                     
+
+15 rows selected.
+
+
+COURSE_I SEC_ID   SEMEST       YEAR NB_INSCRITS                                 
+-------- -------- ------ ---------- -----------                                 
+MU-199   1        Spring       2010           1                                 
+CS-315   1        Spring       2010           2                                 
+CS-101   1        Spring       2010           1                                 
+HIS-351  1        Spring       2010           1                                 
+FIN-201  1        Spring       2010           1                                 
+CS-319   2        Spring       2010           1                                 
+CS-319   1        Spring       2010           1                                 
+
+7 rows selected.
+
+
+DEPT_NAME            MAX_SALARY                                                 
+-------------------- ----------                                                 
+Elec. Eng.                80000                                                 
+Physics                   95000                                                 
+Comp. Sci.                92000                                                 
+Finance                   90000                                                 
+Biology                   72000                                                 
+Music                     40000                                                 
+History                   62000                                                 
+
+7 rows selected.
+
+
+COURSE_I SEC_ID   SEMEST       YEAR NB_INSCRITS                                 
+-------- -------- ------ ---------- -----------                                 
+CS-347   1        Fall         2009           2                                 
+MU-199   1        Spring       2010           1                                 
+BIO-301  1        Summer       2010           1                                 
+CS-315   1        Spring       2010           2                                 
+CS-190   2        Spring       2009           2                                 
+EE-181   1        Spring       2009           1                                 
+CS-101   1        Fall         2009           6                                 
+PHY-101  1        Fall         2009           1                                 
+CS-101   1        Spring       2010           1                                 
+BIO-101  1        Summer       2009           1                                 
+HIS-351  1        Spring       2010           1                                 
+
+COURSE_I SEC_ID   SEMEST       YEAR NB_INSCRITS                                 
+-------- -------- ------ ---------- -----------                                 
+FIN-201  1        Spring       2010           1                                 
+CS-319   2        Spring       2010           1                                 
+CS-319   1        Spring       2010           1                                 
+
+14 rows selected.
+
+
+BUILDING          NB_COURS                                                      
+--------------- ----------                                                      
+Painter                  1                                                      
+Watson                   3                                                      
+Taylor                   2                                                      
+Packard                  4                                                      
+
+
+DEPT_NAME              NB_COURS                                                 
+-------------------- ----------                                                 
+Elec. Eng.                    1                                                 
+Physics                       1                                                 
+Comp. Sci.                    4                                                 
+History                       1                                                 
+Music                         1                                                 
+
+
+TITLE                                              NAME                         
+-------------------------------------------------- --------------------         
+Database System Concepts                           Srinivasan                   
+Game Design                                        Brandt                       
+Game Design                                        Brandt                       
+Genetics                                           Crick                        
+Image Processing                                   Brandt                       
+Image Processing                                   Katz                         
+Intro. to Biology                                  Crick                        
+Intro. to Computer Science                         Katz                         
+Intro. to Computer Science                         Srinivasan                   
+Intro. to Digital Systems                          Kim                          
+Investment Banking                                 Wu                           
+
+TITLE                                              NAME                         
+-------------------------------------------------- --------------------         
+Music Video Production                             Mozart                       
+Physical Principles                                Einstein                     
+Robotics                                           Srinivasan                   
+World History                                      El Said                      
+
+15 rows selected.
+
+
+SEMEST   NB_COURS                                                               
+------ ----------                                                               
+Spring         10                                                               
+Summer          2                                                               
+Fall            3                                                               
+
+
+NAME                 TOTAL_CREDITS                                              
+-------------------- -------------                                              
+Bourikas                         7                                              
+Levy                            11                                              
+
+
+BUILDING        TOTAL_CREDITS                                                   
+--------------- -------------                                                   
+Painter                    11                                                   
+Watson                     10                                                   
+Taylor                     17                                                   
+Packard                    14                                                   
+

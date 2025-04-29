@@ -1,0 +1,212 @@
+
+DEPT_NAME                                                                       
+--------------------                                                            
+Finance                                                                         
+
+
+NAME                     SALARY                                                 
+-------------------- ----------                                                 
+Wu                        90000                                                 
+Einstein                  95000                                                 
+Gold                      87000                                                 
+Katz                      75000                                                 
+Singh                     80000                                                 
+Brandt                    92000                                                 
+Kim                       80000                                                 
+
+7 rows selected.
+
+
+ENSEIGNANT           ETUDIANT               NB_COURS                            
+-------------------- -------------------- ----------                            
+Srinivasan           Shankar                       3                            
+Katz                 Levy                          2                            
+Srinivasan           Zhang                         2                            
+Crick                Tanaka                        2                            
+Srinivasan           Bourikas                      2                            
+
+
+ENSEIGNANT           ETUDIANT               NB_COURS                            
+-------------------- -------------------- ----------                            
+Crick                Tanaka                        2                            
+Katz                 Levy                          2                            
+Srinivasan           Bourikas                      2                            
+Srinivasan           Shankar                       3                            
+Srinivasan           Zhang                         2                            
+
+
+ID    NAME                                                                      
+----- --------------------                                                      
+19991 Brandt                                                                    
+23121 Chavez                                                                    
+55739 Sanchez                                                                   
+70557 Snow                                                                      
+
+
+ID    NAME                 DEPT_NAME                SALARY                      
+----- -------------------- -------------------- ----------                      
+22222 Einstein             Physics                   95000                      
+32343 El Said              History                   60000                      
+
+
+NAME                                                                            
+--------------------                                                            
+Gold                                                                            
+
+
+NAME                     SALARY                                                 
+-------------------- ----------                                                 
+Mozart                    40000                                                 
+El Said                   60000                                                 
+Califieri                 62000                                                 
+
+
+NAME                                                                            
+--------------------                                                            
+Zhang                                                                           
+Shankar                                                                         
+Peltier                                                                         
+Levy                                                                            
+Williams                                                                        
+Brown                                                                           
+Bourikas                                                                        
+
+7 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Zhang                                                                           
+Shankar                                                                         
+Peltier                                                                         
+Levy                                                                            
+Williams                                                                        
+Brown                                                                           
+Bourikas                                                                        
+
+7 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Zhang                                                                           
+Brown                                                                           
+Bourikas                                                                        
+Shankar                                                                         
+Peltier                                                                         
+Levy                                                                            
+Williams                                                                        
+
+7 rows selected.
+
+
+NAME                                                                            
+--------------------                                                            
+Zhang                                                                           
+Shankar                                                                         
+Peltier                                                                         
+Levy                                                                            
+Williams                                                                        
+Brown                                                                           
+Bourikas                                                                        
+
+7 rows selected.
+
+FROM (student s1 NATURAL JOIN takes t1) A
+                                        *
+ERROR at line 2:
+ORA-00933: SQL command not properly ended 
+Help: https://docs.oracle.com/error-help/db/ora-00933/ 
+
+
+
+NAME                 NB_ETUDIANTS                                               
+-------------------- ------------                                               
+Srinivasan                     10                                               
+Brandt                          3                                               
+Katz                            2                                               
+Crick                           2                                               
+El Said                         1                                               
+Einstein                        1                                               
+Mozart                          1                                               
+Wu                              1                                               
+Kim                             1                                               
+
+9 rows selected.
+
+
+NAME                 NB_ETUDIANTS                                               
+-------------------- ------------                                               
+Srinivasan                     10                                               
+Brandt                          3                                               
+Crick                           2                                               
+Katz                            2                                               
+El Said                         1                                               
+Mozart                          1                                               
+Einstein                        1                                               
+Wu                              1                                               
+Kim                             1                                               
+Singh                           0                                               
+Califieri                       0                                               
+
+NAME                 NB_ETUDIANTS                                               
+-------------------- ------------                                               
+Gold                            0                                               
+
+12 rows selected.
+
+
+NAME                       NB_A                                                 
+-------------------- ----------                                                 
+Srinivasan                    4                                                 
+Brandt                        2                                                 
+Crick                         1                                                 
+Wu                            0                                                 
+Kim                           0                                                 
+Singh                         0                                                 
+Califieri                     0                                                 
+Katz                          0                                                 
+Mozart                        0                                                 
+El Said                       0                                                 
+Einstein                      0                                                 
+
+NAME                       NB_A                                                 
+-------------------- ----------                                                 
+Gold                          0                                                 
+
+12 rows selected.
+
+
+ENSEIGNANT           ETUDIANT               NB_COURS                            
+-------------------- -------------------- ----------                            
+Srinivasan           Shankar                       3                            
+Brandt               Shankar                       1                            
+Katz                 Levy                          2                            
+Srinivasan           Levy                          1                            
+Srinivasan           Brown                         1                            
+Wu                   Chavez                        1                            
+Brandt               Brown                         1                            
+Kim                  Aoi                           1                            
+Srinivasan           Zhang                         2                            
+Mozart               Sanchez                       1                            
+El Said              Brandt                        1                            
+
+ENSEIGNANT           ETUDIANT               NB_COURS                            
+-------------------- -------------------- ----------                            
+Brandt               Williams                      1                            
+Crick                Tanaka                        2                            
+Einstein             Peltier                       1                            
+Srinivasan           Williams                      1                            
+Srinivasan           Bourikas                      2                            
+
+16 rows selected.
+
+
+ENSEIGNANT           ETUDIANT                                                   
+-------------------- --------------------                                       
+Srinivasan           Shankar                                                    
+Katz                 Levy                                                       
+Srinivasan           Zhang                                                      
+Crick                Tanaka                                                     
+Srinivasan           Bourikas                                                   
+

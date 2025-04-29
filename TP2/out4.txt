@@ -1,0 +1,16 @@
+Relations:
+         {'B', 'G', 'A', 'C', 'H', 'I'}
+         {'Y', 'X'}
+
+Dépendances:
+         {'A'} --> {'B'}
+         {'A'} --> {'C'}
+         {'C', 'G'} --> {'H'}
+         {'C', 'G'} --> {'I'}
+         {'B'} --> {'H'}
+
+Clôture de {A}: {'B', 'A', 'C', 'H'}
+
+Toutes les clés candidates: [{'G', 'A'}]
+
+Décomposition BCNF: [{'Y', 'X'}, {'B', 'H'}, {'B', 'C', 'A'}, {'I', 'G', 'A'}]
